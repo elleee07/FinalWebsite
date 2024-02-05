@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert to Uppercase</title>
+</head>
+<body>
+    <h1>Convert String to Uppercase</h1>
+
+    <form action="/works" method="post">
+        <label for="inputString">Enter a string:</label>
+        <input type="text" id="inputString" name="inputString">
+        <input type="submit" value="Convert">
+    </form>
+
+    {% if result %}
+    <p>Converted string: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
+
+<br><br>
+<h1>Welcome to my programming works</h1>
+<p>Instruction: create a route and a page for the link that are not working</p>
+
+<ul>
+    <dt><a href="/works">toUpperCase</a>
+    <dt><a href="/areaOfcirle">Area of a Circle</a>
+    <dt><a href="/areaOfTriangle">Area of a Triangle</a>
+</ul>
+</body>
+</html>
+

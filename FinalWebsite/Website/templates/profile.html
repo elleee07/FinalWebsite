@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    <style>
+        body {
+            background-image: url("{{url_for('static', filename='11.jpg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+
+<body>
+    <section>
+    <div class="content">
+        <div class="pic">
+            <img src="{{url_for('static', filename='img.jpg') }}" alt="me" class="me">
+        </div>
+            <h4>Hello, my name is</h4>
+            <h1>Ella Marie Mallari</h1>   
+            <h2>Course | Section: BSCPE 2-4 Subject: DSA</h2> 
+                <div class="homepage">
+                    <ul>
+                        <dt><a href="/home">Home Page</a></dt>
+                    </ul>
+                    <nav></nav>
+                </div>
+                <div class="knowmore">
+                    <ul>
+                        <h3><a href="/more" class="button">Know More</a></h3>
+                    </ul>
+                    <nav></nav>
+                </div>
+    </section>
+</body>
+</head>
+</body>
+</html>

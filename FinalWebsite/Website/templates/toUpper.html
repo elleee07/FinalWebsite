@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert to Uppercase</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='upper.css')}}">
+    <style>
+        body {
+            background-image: url("{{url_for('static', filename='g.gif') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <style></style>
+        <dt><a href="/ppage" class="button">Elle's Programming Works</a></dt>
+    <nav></nav>
+    <div class="title">
+        <h1>Convert String to Uppercase</h1>
+    </div>
+
+    <form action="/upper" method="post">
+        <div class="label">
+        <label for="inputString">Enter a string:</label>
+        <input type="text" id="inputString" name="inputString">
+        <input type="submit" value="Convert">
+    </div>
+    </form>
+
+
+    <div class="result"></div>
+    {% if result %}
+    <p>Converted string: {{ result }}</p>
+    {% endif %}
+
+</div>
+</body>
+</html>

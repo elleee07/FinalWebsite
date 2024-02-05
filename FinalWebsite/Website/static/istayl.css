@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body{
+    font-family: sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #ff4d6d;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #000;
+}
+.button {
+    color: rgb(54, 51, 51);
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #ff758f;
+    padding: 20px 20px;
+    border-radius: 25px;
+    box-shadow: 0 9px #999;
+    cursor: pointer;
+    display:inline-flex;
+    position: absolute;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+.button:hover {background-color: #ffb3c1}
+  
+.button:active {
+    background-color: #ffb3c1;
+    box-shadow: 0 9px #999;
+    transform: translateY(4px);
+}
+ul a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #11201f;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+h1 ul:hover::after{
+    width: 100%;
+}
+.laman{
+    text-align: center;
+    margin-top: 120px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #E4405F;
+}
+footer{
+    margin-top: auto;
+    padding: 50px;
+    background-color:#a4133c;
+}
+.socials ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.socials ul dt{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.socials ul dt .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.socials ul dt .fab:hover{
+    color: #fff;
+}
+
+.socials ul dt a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.socials ul dt a:hover{
+    transform: translate(0, -10%);
+}
+
+.socials ul dt:nth-child(1) a:hover{
+    background-color: rgba(7, 44, 255, 0.829);
+}
+.socials ul dt:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.socials ul dt:nth-child(3) a:hover{
+    background-color: #0a8f0a;
+}

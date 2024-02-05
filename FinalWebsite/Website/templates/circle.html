@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area of a Circle</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='upper.css')}}">
+    <style>
+        body {
+            background-image: url("{{url_for('static', filename='g.gif') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <style></style>
+        <dt><a href="/ppage" class="button">Elle's Programming Works</a></dt>
+    <nav></nav>
+    <div class="title">
+        <h1>Calculate the Area of a Circle</h1>
+    </div>
+
+    <form action="/circle" method="post">
+        <div class="label">
+        <label for="radius">Enter the radius of the circle:</label>
+        <input type="text" id="raidus" name="radius">
+        <input type="submit" value="Calculate">
+    </div>
+    </form>
+
+
+    <div class="result"></div>
+    {% if result %}
+    <p>{{ result }}</p>
+    {% endif %}
+
+</div>
+</body>
+</html>
